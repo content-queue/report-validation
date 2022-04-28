@@ -1,0 +1,16 @@
+name: 'Content-Queue Report Validation'
+description: 'Reports validation issues to the issue as a comment'
+inputs:
+  readyLabel:
+    description: 'Label to add to issues that are validated'
+    default: 'ready'
+    required: false
+  token:
+    description: 'GitHub token'
+    required: true
+  validationErrors:
+    description: 'Validation errors to report as stringified JSON'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'

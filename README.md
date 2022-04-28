@@ -1,2 +1,2 @@
 # report-validation
-Reports validation errors to the card's issue
+Reports validation issues to the card's issue as a comment
